@@ -13,10 +13,10 @@
 #include <lorawan.h>
 
 #define PIN_CS 15
-#define PIN_EN 32
 #define PIN_RESET 0
 #define PIN_DIO0 27
 #define PIN_DIO1 2
+#define PIN_EN 32
 
 //ABP Credentials
 const char *devAddr = "your-antares-device-address";

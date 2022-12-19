@@ -22,7 +22,7 @@ On-going
 
 ## Source Codes
 
-* [LoRaWAN ANTARES code for Aurora V1](examples/aurora-v1-antares-send-class-A-ABP/aurora-v1-antares-send-class-A-ABP.ino)
+* [LoRaWAN ANTARES code for Aurora V1](examples/aurora-v1-antares-send-class-C-ABP/aurora-v1-antares-send-class-C-ABP.ino)
 * [LoRaWAN ANTARES code for Aurora V2](examples/aurora-v2-antares-send-class-C-ABP/aurora-v2-antares-send-class-C-ABP.ino)
 
 ## Step by Step
@@ -32,7 +32,7 @@ On-going
 3. Setup in Arduino IDE : Pick the appropriate board : Tools &#8594; Board &#8594; ESP32 (If not listed? [Install ESP32 Board](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/))
 4. Add a device and set lora for it in your ANTARES account.
 5. Load codes below based on your Cosmic LoRa Aurora Version to Arduino IDE.
-    * [LoRaWAN ANTARES code for Aurora V1](examples/aurora-v1-antares-send-class-A-ABP/aurora-v1-antares-send-class-A-ABP.ino)
+    * [LoRaWAN ANTARES code for Aurora V1](examples/aurora-v1-antares-send-class-C-ABP/aurora-v1-antares-send-class-C-ABP.ino)
     * [LoRaWAN ANTARES code for Aurora V2](examples/aurora-v2-antares-send-class-C-ABP/aurora-v2-antares-send-class-C-ABP.ino)
 6. Modify the code using your access key & registered device address.
 7. Click Verify then Click Upload to Board. (Error compile? [Install ANTARES Library](#prerequisite))

@@ -12,6 +12,12 @@
 */
 #include <lorawan.h>
 
+#define PIN_CS 2
+#define PIN_RESET 13
+#define PIN_DIO0 14
+#define PIN_DIO1 12
+#define PIN_EN 32
+
 //ABP Credentials
 const char *devAddr = "4ff6c1bd";
 const char *nwkSKey = "93df5e92cbaf1efc0000000000000000";
@@ -28,18 +34,20 @@ int port, channel, freq;
 bool newmessage = false;
 
 const sRFM_pins RFM_pins = {
-  .CS = 2,
-  .RST = 13,
-  .DIO0 = 14,
-  .DIO1 = 12,
+  .CS = PIN_CS,
+  .RST = PIN_RESET,
+  .DIO0 = PIN_DIO0,
+  .DIO1 = PIN_DIO1,
 };
 
 void setup() {
-  // Setup ANTARES access
-  Serial.begin(115200);
-  pinMode(32,OUTPUT);
-  digitalWrite(32,LOW);
+  // Initiate the LoRa Enable pin
+  pinMode(PIN_EN,OUTPUT);
+  // LoRa chip is Active Low
+  digitalWrite(PIN_EN,LOW);
 
+  // Initiate the Serial Communication
+  Serial.begin(115200);
   delay(2000);
   if (!lora.init()) {
     Serial.println("RFM95 not detected");
@@ -48,10 +56,10 @@ void setup() {
   }
 
   // Set LoRaWAN Class change CLASS_A or CLASS_C
-  lora.setDeviceClass(CLASS_A);
+  lora.setDeviceClass(CLASS_C);
 
   // Set Data Rate
-  lora.setDataRate(SF10BW125);
+  lora.setDataRate(SF12BW125);
 
   // Set FramePort Tx
   lora.setFramePortTx(5);
@@ -75,7 +83,6 @@ void loop() {
 
     sprintf(myStr, "Lora Counter-%d", counter++);
 
-    
     Serial.print("Sending: ");
     Serial.println(myStr);
     lora.sendUplink(myStr, strlen(myStr), 0);
