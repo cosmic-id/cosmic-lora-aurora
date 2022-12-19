@@ -46,7 +46,7 @@ Cosmic LoRa Aurora is an High-End Development Board that will fasten your time t
 | RST    | 13 | 0  |
 | DIO0   | 14 | 27 |
 | DIO1   | 12 | 2  |
-| ENABLE | 32 | 32 | 
+| ENABLE | 32 Active Low | 32 Active High| 
 
 ### Examples
 
