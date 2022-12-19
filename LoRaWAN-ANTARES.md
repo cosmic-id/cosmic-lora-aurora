@@ -7,7 +7,7 @@ On-going
 ## Requirements
 
 * 1x [Cosmic LoRa Aurora](https://tokopedia.link/Kb9ovevroob)
-* 1x Micro USB Type B Cable
+* 1x Micro USB Type B Cable for Aurora V1 or 1x USB Type C Cable for Aurora V2
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Prerequisite
