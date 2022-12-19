@@ -23,7 +23,7 @@ On-going
 ## Source Codes
 
 * [LoRaWAN ANTARES code for Aurora V1](examples/aurora-v1-antares-send-class-A-ABP/aurora-v1-antares-send-class-A-ABP.ino)
-* [LoRaWAN ANTARES code for Aurora V2](examples/aurora-v2-antares-send-class-A-ABP/aurora-v2-antares-send-class-A-ABP.ino)
+* [LoRaWAN ANTARES code for Aurora V2](examples/aurora-v2-antares-send-class-C-ABP/aurora-v2-antares-send-class-C-ABP.ino)
 
 ## Step by Step
 
@@ -33,7 +33,7 @@ On-going
 4. Add a device and set lora for it in your ANTARES account.
 5. Load codes below based on your Cosmic LoRa Aurora Version to Arduino IDE.
     * [LoRaWAN ANTARES code for Aurora V1](examples/aurora-v1-antares-send-class-A-ABP/aurora-v1-antares-send-class-A-ABP.ino)
-    * [LoRaWAN ANTARES code for Aurora V2](examples/aurora-v2-antares-send-class-A-ABP/aurora-v2-antares-send-class-A-ABP.ino)
+    * [LoRaWAN ANTARES code for Aurora V2](examples/aurora-v2-antares-send-class-C-ABP/aurora-v2-antares-send-class-C-ABP.ino)
 6. Modify the code using your access key & registered device address.
 7. Click Verify then Click Upload to Board. (Error compile? [Install ANTARES Library](#prerequisite))
 8. Open Serial Monitor of Arduino IDE. Set the Baud Rate as stated in Serial.begin of the LoRaWAN ANTARES code. Some debug info should be appeared stated it transmits some data to ANTARES.
