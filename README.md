@@ -54,6 +54,7 @@ Cosmic LoRa Aurora is an High-End Development Board that will fasten your time t
 * [LoRaWAN ANTARES](LoRaWAN-ANTARES.md)
 * [RGB (avail on v2 only)](examples/aurora-v2-rgb-led/aurora-v2-rgb-led.ino)
 * [BME280 (avail on v2 only)](examples/aurora-v2-bme280/aurora-v2-bme280.ino)
+* [MPU6050 (avail on v2 only)](examples/aurora-v2-mpu6050/aurora-v2-mpu6050.ino)
 
 ## FAQ
 
