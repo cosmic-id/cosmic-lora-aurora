@@ -42,7 +42,7 @@ const sRFM_pins RFM_pins = {
 };
 
 void setup() {
-// Initiate the Serial Communication
+  // Initiate the Serial Communication
   Serial.begin(115200);
 
   // Initiate the LoRa Enable pin
