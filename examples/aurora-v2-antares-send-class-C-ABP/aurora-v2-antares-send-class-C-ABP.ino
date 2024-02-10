@@ -12,11 +12,12 @@
 */
 #include <lorawan.h>
 
-#define PIN_CS 15
-#define PIN_RESET 0
-#define PIN_DIO0 27
-#define PIN_DIO1 2
-#define PIN_EN 32
+// LoRa <-> ESP32 Interfaces
+#define LORA_AURORA_V2_NSS  15
+#define LORA_AURORA_V2_RST  0
+#define LORA_AURORA_V2_DIO0 27
+#define LORA_AURORA_V2_DIO1 2
+#define LORA_AURORA_V2_EN   32
 
 //ABP Credentials
 const char *devAddr = "your-antares-device-address";
@@ -34,20 +35,19 @@ int port, channel, freq;
 bool newmessage = false;
 
 const sRFM_pins RFM_pins = {
-  .CS = PIN_CS,
-  .RST = PIN_RESET,
-  .DIO0 = PIN_DIO0,
-  .DIO1 = PIN_DIO1,
+  .CS   = LORA_AURORA_V2_NSS,
+  .RST  = LORA_AURORA_V2_RST,
+  .DIO0 = LORA_AURORA_V2_DIO0,
+  .DIO1 = LORA_AURORA_V2_DIO1,
 };
 
 void setup() {
-  // Initiate the LoRa Enable pin
-  pinMode(PIN_EN, OUTPUT);
-  // LoRa chip is Active High
-  digitalWrite(PIN_EN, HIGH);
-  
-  // Setup loraid access
   Serial.begin(115200);
+
+  // Initiate the LoRa Enable pin
+  pinMode(LORA_AURORA_V2_EN, OUTPUT);
+  // LoRa chip is Active High
+  digitalWrite(LORA_AURORA_V2_EN, HIGH);
   delay(2000);
   if (!lora.init()) {
     Serial.println("RFM95 not detected");
@@ -59,7 +59,7 @@ void setup() {
   lora.setDeviceClass(CLASS_C);
 
   // Set Data Rate
-  lora.setDataRate(SF10BW125);
+  lora.setDataRate(SF12BW125);
 
   // Set FramePort Tx
   lora.setFramePortTx(5);

@@ -12,10 +12,17 @@
 */
 #include <lorawan.h>
 
+// LoRa <-> ESP32 Interfaces
+#define LORA_AURORA_V1_NSS  2
+#define LORA_AURORA_V1_RST  13
+#define LORA_AURORA_V1_DIO0 14
+#define LORA_AURORA_V1_DIO1 12
+#define LORA_AURORA_V1_EN   32
+
 //ABP Credentials
-const char *devAddr = "4ff6c1bd";
-const char *nwkSKey = "93df5e92cbaf1efc0000000000000000";
-const char *appSKey = "000000000000000002e21425cc8ccfa2";
+const char *devAddr = "your-device-address";
+const char *nwkSKey = "your-network-session-key";
+const char *appSKey = "your-app-session-key";
 
 const unsigned long interval = 10000;    // 10 s interval to send message
 unsigned long previousMillis = 0;  // will store last time message sent
@@ -29,19 +36,22 @@ bool newmessage = false;
 
 // define the chip interface based on the back-plate board information
 const sRFM_pins RFM_pins = {
-  .CS = 2,
-  .RST = 13,
-  .DIO0 = 14,
-  .DIO1 = 12,
+  .CS   = LORA_AURORA_V1_NSS,
+  .RST  = LORA_AURORA_V1_RST,
+  .DIO0 = LORA_AURORA_V1_DIO0,
+  .DIO1 = LORA_AURORA_V1_DIO1,
 };
 
 void setup() {
-  // Setup ANTARES access
+  // Initiate the Serial Communication
   Serial.begin(115200);
-  pinMode(32,OUTPUT);
-  digitalWrite(32,LOW);
 
+  // Initiate the LoRa Enable pin
+  pinMode(LORA_AURORA_V1_EN, OUTPUT);
+  // LoRa chip is Active Low
+  digitalWrite(LORA_AURORA_V1_EN, LOW);
   delay(2000);
+
   if (!lora.init()) {
     Serial.println("RFM95 not detected");
     delay(5000);
