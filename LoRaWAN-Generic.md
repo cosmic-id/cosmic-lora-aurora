@@ -6,7 +6,7 @@ On-going
 
 ## Requirements
 
-* 1x [Cosmic LoRa Aurora](https://www.tokopedia.com/cosmic-iot/lora-esp32-esp-32-arduino-915-mhz-915mhz-antenna-lipo-charger-lora-aurora-v1)
+* 1x [Cosmic LoRa Aurora](https://www.tokopedia.com/cosmic-iot/lora-aurora-esp32-esp-32-arduino-915-mhz-915mhz-sma-4-8dbi-8ba58)
 * 1x Micro USB Type B Cable
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
