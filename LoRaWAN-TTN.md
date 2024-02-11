@@ -26,7 +26,7 @@ This tutorial provides you an example of using [Cosmic LoRa Aurora](https://www.
 
 ## Source Codes
 
-> make sure you use the proriate code. please double check your cosmic board version.
+> make sure you use the appropiate code. please double check your cosmic board version.
 
 * [Aurora V1](examples/aurora-v1-lorawan-generic-send-class-C-ABP/aurora-v1-lorawan-generic-send-class-C-ABP.ino)
 * [Aurora V2](examples/aurora-v2-lorawan-generic-send-class-C-ABP/aurora-v2-lorawan-generic-send-class-C-ABP.ino)
@@ -38,7 +38,12 @@ This tutorial provides you an example of using [Cosmic LoRa Aurora](https://www.
 2. Create an Application in the TTN. 
   * ![Application Creation](assets/application-creation.png "Application Creation")
   * ![Application Creation 2](assets/application-creation-2.png "Application Creation 2")
-### 
+3. Register End Device. This step is to register your LoRa Aurora to TTN.
+* ![Register End Device](assets/application-created.png "Application Creation")
+* ![Register End Device 2](assets/register-end-device.png "Register End Device 2")
+* ![Register End Device 3](assets/register-end-device-2.png "Register End Device 3")
+
+### Program the End Device
 
 1. Plug the Cosmic LoRa Ray boards to your Laptop.
 2. COM Port should be activated. (If not activated? [Install CH340 driver](https://sparks.gogo.co.nz/ch340.html)).
