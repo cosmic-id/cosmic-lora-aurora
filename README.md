@@ -10,6 +10,7 @@
 
 ## Table of Content
 
+* [Product Features](#product-features)
 * [Technical Spesification](#technical-spesification)
 * [Documentation](#documentation)
   * [Pinout Diagram](#pinout-diagram)
@@ -17,15 +18,28 @@
   * [Examples](#examples)
 * [FAQ](#FAQ)
 
+## Product Features
+
+* LoRa/LoRaWAN Connectivity
+* WiFi & BLE Connectivity
+* Inertial Measurement Unit (IMU) Sensor: 3-Axis Accelerometer, 3-Axis Gyroscope
+* Environment Sensor: Temperature & Humidity
+* Altitude Sensor
+* ESP32 Ready for AI
+* RGB LED
+
 ## Technical Spesification
 
-| Feature                 |                    Value                |  
-| ----------------------- | --------------------------------------- |
-| Microcontroller         |                    ESP32          |
-| LoRa(WAN) Chip          |                    RFM95W               |
-| LoRa(WAN) Base Freq     |                    915 MHz              |
-| LoRa(WAN) Freq Range    |                    902-928 MHz          |
-| Antenna Impedance       |                    50 Ohm               |
+| Features                           | Value                |  
+| ---------------------------------- | -------------------- |
+| Microcontroller                    | ESP32                |
+| LoRa(WAN) Chip                     | RFM95W               |
+| LoRa(WAN) Base Freq                | 915 MHz              |
+| LoRa(WAN) Freq Range               | 902-928 MHz          |
+| Antenna Impedance                  | 50 Ohm               |
+| IMU Sensor                         | MPU6050              |
+| Environment & Altitude Sensor      | BME280               |
+| RGB LED                            | WS2812B              |    
 
 ## Documentation
 
