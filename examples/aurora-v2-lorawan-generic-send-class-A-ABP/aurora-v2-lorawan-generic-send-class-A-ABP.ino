@@ -12,16 +12,17 @@
 */
 #include <lorawan.h>
 
-#define SS 15
-#define RESET 0
-#define DIO0 27
-#define DIO1 2
-#define EN 32
+// LoRa <-> ESP32 Interfaces
+#define LORA_AURORA_V2_NSS  15
+#define LORA_AURORA_V2_RST  0
+#define LORA_AURORA_V2_DIO0 27
+#define LORA_AURORA_V2_DIO1 2
+#define LORA_AURORA_V2_EN   32
 
 //ABP Credentials
-const char *devAddr = "ea2a0174";
-const char *nwkSKey = "e7e349fc2216941a0000000000000000";
-const char *appSKey = "00000000000000009d0cf82c25277bdd";
+const char *devAddr = "your-device-address";
+const char *nwkSKey = "your-network-session-key";
+const char *appSKey = "your-app-session-key";
 
 const unsigned long interval = 10000;    // 10 s interval to send message
 unsigned long previousMillis = 0;  // will store last time message sent
@@ -34,19 +35,22 @@ int port, channel, freq;
 bool newmessage = false;
 
 const sRFM_pins RFM_pins = {
-  .CS = SS,
-  .RST = RESET,
-  .DIO0 = DIO0,
-  .DIO1 = DIO1,
+  .CS   = LORA_AURORA_V2_NSS,
+  .RST  = LORA_AURORA_V2_RST,
+  .DIO0 = LORA_AURORA_V2_DIO0,
+  .DIO1 = LORA_AURORA_V2_DIO1,
 };
 
 void setup() {
-  // Setup ANTARES access
+  // Initiate the Serial Communication
   Serial.begin(115200);
-  pinMode(EN,OUTPUT);
-  digitalWrite(EN,HIGH);
 
+  // Initiate the LoRa Enable pin
+  pinMode(LORA_AURORA_V2_EN, OUTPUT);
+  // LoRa chip is Active High
+  digitalWrite(LORA_AURORA_V2_EN, HIGH);
   delay(2000);
+
   if (!lora.init()) {
     Serial.println("RFM95 not detected");
     delay(5000);
@@ -54,10 +58,10 @@ void setup() {
   }
 
   // Set LoRaWAN Class change CLASS_A or CLASS_C
-  lora.setDeviceClass(CLASS_A);
+  lora.setDeviceClass(CLASS_C);
 
   // Set Data Rate
-  lora.setDataRate(SF10BW125);
+  lora.setDataRate(SF12BW125);
 
   // Set FramePort Tx
   lora.setFramePortTx(5);
