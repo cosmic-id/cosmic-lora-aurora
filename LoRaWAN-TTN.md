@@ -39,20 +39,20 @@ This tutorial provides you an example of using [Cosmic LoRa Aurora](https://www.
   * ![Application Creation](assets/application-creation.png "Application Creation")
   * ![Application Creation 2](assets/application-creation-2.png "Application Creation 2")
 3. Register End Device. This step is to register your LoRa Aurora to TTN.
-* ![Register End Device](assets/application-created.png "Application Creation")
-* ![Register End Device 2](assets/register-end-device.png "Register End Device 2")
-* ![Register End Device 3](assets/register-end-device-2.png "Register End Device 3")
+  * ![Register End Device](assets/application-created.png "Application Creation")
+  * ![Register End Device 2](assets/register-end-device.png "Register End Device 2")
+  * ![Register End Device 3](assets/register-end-device-2.png "Register End Device 3")
+4. End Device is Registered. ![End Device is Registered](assets/end-device-registered.png "End Device is Registered")
 
 ### Program the End Device
 
-1. Plug the Cosmic LoRa Ray boards to your Laptop.
+1. Plug the Cosmic LoRa Aurora boards to your Laptop.
 2. COM Port should be activated. (If not activated? [Install CH340 driver](https://sparks.gogo.co.nz/ch340.html)).
-3. Setup in Arduino IDE :
-   * Pick the appropriate board : Tools &#8594; Board &#8594; Arduino Pro or Pro Mini
-   * Pick the appropriate processor : Tools &#8594; Board &#8594; ATMega 328P (3.3V 8 MHz)
-4. Add a device and set lora for it in your ANTARES account.
-5. Load [LoRaWAN ANTARES code](examples/send-class-A-ABP/send-class-A-ABP.ino) to Arduino IDE.
-6. Modify the code using your access key & registered device address.
-7. Click Verify then Click Upload to Board. (Error compile? [Install ANTARES Library](#prerequisite))
-8. Open Serial Monitor of Arduino IDE. Set the Baud Rate as stated in Serial.begin of the LoRaWAN ANTARES code. Some debug info should be appeared stated it transmits some data to ANTARES.
-9. Check your ANTARES Console. Some data must be shown. YEEAAYY Congrattzz!! You are sending LoRaWAN to ANTARES.
+3. Setup in Arduino IDE : Pick the appropriate board : Tools &#8594; Board &#8594; ESP32 (If not listed? [Install ESP32 Board](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/))
+4. Load [LoRaWAN code](#source-codes) to Arduino IDE.
+6. Modify the code using your registered TTN parameters of **Device Address, Application Session Key & Network Session Key.** 
+7. Click Verify then Click Upload to Board. (Error compile? [Make sure do the Prerequisites](#prerequisite))
+8. Open Serial Monitor of Arduino IDE. Set the Baud Rate as stated in Serial.begin of the code. Some debug info should be appeared stated it transmits some data to TTN. ![Serial Monitor](assets/serial-monitor.png "Serial Monitor")
+9. Check your TTN Console. Some data must be shown. YEEAAYY Congrattzz!! You are successfully sending LoRaWAN to TTN.
+![Data is Sent](assets/data-is-sent.png "Data is Sent")
+![Data is Sent](assets/data-is-sent-2.png "Data is Sent")
