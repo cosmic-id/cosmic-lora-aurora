@@ -8,9 +8,9 @@ This tutorial provides you an example of using [Cosmic LoRa Aurora](https://www.
 
 ## Requirements
 
-* 1x [Cosmic LoRa Aurora](https://www.tokopedia.com/cosmic-iot/lora-aurora-esp32-esp-32-arduino-915-mhz-915mhz-sma-4-8dbi-8ba58)
-* 1x USB Type C Cable for Aurora V2 or 1x Micro USB Type B Cable for Aurora V1
-* 1x [LoRaWAN Gateway RAK 7268](https://www.tokopedia.com/cosmic-iot/gateway-lora-lorawan-merk-rak-tipe-rak7268c-wisgate-edge-lite-2)
+* 1 pc [Cosmic LoRa Aurora](https://www.tokopedia.com/cosmic-iot/lora-aurora-esp32-esp-32-arduino-915-mhz-915mhz-sma-4-8dbi-8ba58)
+* 1 pc USB Type C Cable for Aurora V2 or 1x Micro USB Type B Cable for Aurora V1
+* 1 pc [LoRaWAN Gateway RAK 7268](https://www.tokopedia.com/cosmic-iot/gateway-lora-lorawan-merk-rak-tipe-rak7268c-wisgate-edge-lite-2)
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Prerequisites
@@ -22,7 +22,7 @@ This tutorial provides you an example of using [Cosmic LoRa Aurora](https://www.
   1. [Download Library](/library/LoRaWAN.zip)
   2. Unzip the Library into one Folder
   3. Copy the one folder into your Arduino -> libraries
-  4. Confirm the the installed library by opening the Arduino IDE. Check if File -> Examples -> Antares LoRaWAN is exist.
+  4. Confirm whether the library is properly installed by opening the Arduino IDE. Check if File -> Examples -> Antares LoRaWAN is exist.
 
 ## Source Codes
 
