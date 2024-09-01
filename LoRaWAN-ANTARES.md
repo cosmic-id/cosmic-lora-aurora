@@ -14,11 +14,11 @@ On-going
 
 * [Install CH340 Driver](https://sparks.gogo.co.nz/ch340.html)
 * Install ANTARES Library
-  1. [Download Library](https://antares.id/assets/files/Arduino-lora-id-AS923-2.zip)
+  1. [Download Library](library/LoRaWAN.zip)
   2. Import library : Sketch &#8594; Include Library &#8594; Add .ZIP Library...
   3. Load your downloaded library. Confirm.
-* Having an [ANTARES account](https://console.antares.id/register)
-* Check [Coverage of ANTARES](https://www.telkomiot.com/coverage) in your testing location
+* Having an [ANTARES account](https://console.antares.id/signup)
+* Check [Coverage of ANTARES](https://antares.id/product/connectivity/coverage) in your testing location
 
 ## Source Codes
 
