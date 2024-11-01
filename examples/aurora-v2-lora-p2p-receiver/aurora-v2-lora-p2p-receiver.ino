@@ -38,8 +38,8 @@ void setup() {
     delay(500);
   }
 
-  LoRa.setTxPower(LORA_TX_POWER, PA_OUTPUT_PA_BOOST_PIN);
-  LoRa.setSpreadingFactor(LORA_SPREADING_FACTOR);
+  //LoRa.setTxPower(LORA_TX_POWER);
+  //LoRa.setSpreadingFactor(LORA_SPREADING_FACTOR);
   
    // Change sync word (0xF3) to match the receiver
   // The sync word assures you don't get LoRa messages from other LoRa transceivers
