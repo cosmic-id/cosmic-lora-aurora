@@ -85,7 +85,7 @@
 * [LoRaWAN The Things Network](LoRaWAN-TTN.md)
 * [LED (avail on v3 only)](examples/aurora-v3-led/aurora-v3-led.ino)
 * [RGB LED (avail on v2, v3 only)](examples/aurora-v2-v3-rgb-led/aurora-v2-v3-rgb-led.ino)
-* [BME280 (avail on v2, v3 only)](examples/aurora-v2-bme280/aurora-v2-bme280.ino)
+* [BME280 (avail on v2, v3 only)](examples/aurora-v2-v3-bme280/aurora-v2-v3-bme280.ino)
 * [MPU6050 (avail on v2 only)](examples/aurora-v2-mpu6050/aurora-v2-mpu6050.ino)
 * [LSM6DS3TRC (avail on v3 only)](examples/aurora-v3-lsm6ds3trc/aurora-v3-lsm6ds3trc.ino)
 
