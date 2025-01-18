@@ -178,7 +178,7 @@ void loop() {
   Serial.println(" radians/s ");
   Serial.println();
 
-  delay(100);
+  delay(1000);
 
   //  // serial plotter friendly format
 
