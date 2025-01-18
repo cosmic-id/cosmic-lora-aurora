@@ -15,6 +15,7 @@
 * [Documentation](#documentation)
   * [Pinout Diagram](#pinout-diagram)
   * [LoRaWAN Chip Interfacing](#lorawan-chip-interfacing)
+  * [On-Board Peripherals Interfacing](#on-board-peripherals-interfacing)
   * [Examples](#examples)
 * [FAQ](#FAQ)
 
@@ -52,18 +53,18 @@
 
 ### LoRa(WAN) Chip Interfacing
 
-| RFM95W | V1 | V2 | V3 |
+| RFM95W | V1 | V2 | V3 | V4 |
 |--------|----|----|----|
 | MOSI   | 23 | 23 | 23 | 
 | MISO   | 19 | 19 | 19 |
 | SCK    | 18 | 18 | 18 |
-| NSS    | 2  | 15 | 15 |
-| RST    | 13 | 0  | 0  |
+| NSS    | 2  | 15 | 13 |
+| RST    | 13 | 0  | 16 |
 | DIO0   | 14 | 27 | 27 |
-| DIO1   | 12 | 2  | 2  |
-| ENABLE | 32 Active Low | 32 Active High | 32 Active High | 
+| DIO1   | 12 | 2  | 17  |
+| ENABLE | 32 Active Low | 32 Active High | 15 Active High | 
 
-### On-Board Peripheral Interfacing
+### On-Board Peripherals Interfacing
 
 | Version | Peripheral         | ESP32 Pin |
 |---------|--------------------|-----------|
@@ -74,14 +75,16 @@
 | V3      | IMU LSM6DS3TRC SDA | 21        |
 | V3      | IMU LSM6DS3TRC SCL | 22        |
 | V2, V3  | BATT LEVEL SENSOR  | 34        |
-| V2, V3  | RGB LED WS2812     | 33        |
+| V2, V3  | RGB LED WS2812     | 26        |
+| V3      | LED                | 2         | 
 
 ### Examples
 
 * [LoRa Point-to-Point](LoRa-P2P.md)
 * [LoRaWAN ANTARES](LoRaWAN-ANTARES.md)
 * [LoRaWAN The Things Network](LoRaWAN-TTN.md)
-* [RGB LED (avail on v2, v3 only)](examples/aurora-v2-rgb-led/aurora-v2-rgb-led.ino)
+* [LED (avail on v3 only)](examples/aurora-v3-led/aurora-v3-led.ino)
+* [RGB LED (avail on v2, v3 only)](examples/aurora-v2-v3-rgb-led/aurora-v2-v3-rgb-led.ino)
 * [BME280 (avail on v2, v3 only)](examples/aurora-v2-bme280/aurora-v2-bme280.ino)
 * [MPU6050 (avail on v2 only)](examples/aurora-v2-mpu6050/aurora-v2-mpu6050.ino)
 * [LSM6DS3TRC (avail on v3 only)](examples/aurora-v3-lsm6ds3trc/aurora-v3-lsm6ds3trc.ino)
