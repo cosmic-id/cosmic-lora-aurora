@@ -1,7 +1,7 @@
 #define LED_AURORA_V3 2
 
 void setup() {
-  // initialize digital pin GPIO18 as an output.
+  // initialize digital pin GPIO2 as an output.
   pinMode(LED_AURORA_V3, OUTPUT);
 }
 
