@@ -51,7 +51,7 @@
 
 [![Cosmic LoRa Aurora Pinout](assets/pin-diagram.webp)](assets/pin-diagram.jpg "Cosmic LoRa Aurora Pinout")
 
-### LoRa(WAN) Chip Interfacing
+### LoRa(WAN) Chip - ESP32 Interfacing
 
 | RFM95W | V1 | V2 | V3 | 
 |--------|----|----|----|
@@ -64,19 +64,19 @@
 | DIO1   | 12 | 2  | 17  |
 | ENABLE | 32 Active Low | 32 Active High | 15 Active High | 
 
-### On-Board Peripherals Interfacing
+### On-Board Peripherals - ESP32 Interfacing
 
-| Version | Peripheral         | ESP32 Pin |
-|---------|--------------------|-----------|
-| V2, V3  | BME280 SDA         | 21        |
-| V2, V3  | BME280 SCL         | 22        |
-| V2      | IMU MPU6050 SDA    | 21        |
-| V2      | IMU MPU6050 SCL    | 22        |
-| V3      | IMU LSM6DS3TRC SDA | 21        |
-| V3      | IMU LSM6DS3TRC SCL | 22        |
-| V2, V3  | BATT LEVEL SENSOR  | 34        |
-| V2, V3  | RGB LED WS2812     | 26        |
-| V3      | LED                | 2         | 
+| Peripheral         | V2 | V3 |
+|--------------------|----|----|
+| BME280 SDA         | 21 | 21 | 
+| BME280 SCL         | 22 | 22 | 
+| IMU MPU6050 SDA    | 21 | X  | 
+| IMU MPU6050 SCL    | 22 | X  | 
+| IMU LSM6DS3TRC SDA | X  | 21 |
+| IMU LSM6DS3TRC SCL | X  | 22 |
+| BATT LEVEL SENSOR  | 34 | 34 |
+| RGB LED WS2812     | 33 | 26 |
+| LED                | X  | 2  |
 
 ### Examples
 
