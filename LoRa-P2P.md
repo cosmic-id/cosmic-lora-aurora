@@ -6,8 +6,8 @@
 
 ## Requirements
 
-* 2x [Cosmic LoRa Aurora v1 or v2](https://www.tokopedia.com/cosmic-iot/lora-aurora-esp32-esp-32-arduino-915-mhz-915mhz-sma-4-8dbi-8ba58)
-* 2x Micro USB Type B Cable for Aurora v1 or USB Type C for Aurora V2
+* 2x [Cosmic LoRa Aurora v1, V2, or V3](https://www.tokopedia.com/cosmic-iot/lora-aurora-esp32-esp-32-lorawan-development-board-sma-4-8dbi-f4804)
+* 2x Micro USB Type B Cable for Aurora v1 or USB Type C for Aurora V2 & V3
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ## Prerequisite
@@ -17,13 +17,19 @@
 
 ## Source Codes
 
-Aurora V1
+### Aurora V3
+* [Transmitter](examples/aurora-v3-lora-p2p-transmitter/aurora-v3-lora-p2p-transmitter.ino)
+* [Receiver](examples/aurora-v3-lora-p2p-receiver/aurora-v3-lora-p2p-receiver.ino)
+
+### Aurora V2
+* [Transmitter](examples/aurora-v2-lora-p2p-transmitter/aurora-v2-lora-p2p-transmitter.ino)
+* [Receiver](examples/aurora-v2-lora-p2p-receiver/aurora-v2-lora-p2p-receiver.ino)
+
+### Aurora V1
 * [Transmitter](examples/aurora-v1-lora-p2p-transmitter/aurora-v1-lora-p2p-transmitter.ino)
 * [Receiver](examples/aurora-v1-lora-p2p-receiver/aurora-v1-lora-p2p-receiver.ino)
 
-Aurora V2
-* [Transmitter](examples/aurora-v2-lora-p2p-transmitter/aurora-v2-lora-p2p-transmitter.ino)
-* [Receiver](examples/aurora-v2-lora-p2p-receiver/aurora-v2-lora-p2p-receiver.ino)
+
 
 ## Step by Step
 

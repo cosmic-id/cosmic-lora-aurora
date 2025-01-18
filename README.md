@@ -62,7 +62,7 @@
 | RST    | 13 | 0  | 16 |
 | DIO0   | 14 | 27 | 27 |
 | DIO1   | 12 | 2  | 17  |
-| ENABLE | 32 Active Low | 32 Active High | 15 Active High | 
+| ENABLE | 32 Active Low | 32 Active High | 15 Active Low | 
 
 ### On-Board Peripherals - ESP32 Interfacing
 
