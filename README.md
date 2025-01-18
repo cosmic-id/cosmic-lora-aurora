@@ -53,7 +53,7 @@
 
 ### LoRa(WAN) Chip Interfacing
 
-| RFM95W | V1 | V2 | V3 | V4 |
+| RFM95W | V1 | V2 | V3 | 
 |--------|----|----|----|
 | MOSI   | 23 | 23 | 23 | 
 | MISO   | 19 | 19 | 19 |
