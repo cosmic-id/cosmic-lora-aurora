@@ -23,25 +23,25 @@
 
 * LoRa/LoRaWAN Connectivity
 * WiFi & BLE Connectivity
-* Inertial Measurement Unit (IMU) Sensor: 3-Axis Accelerometer 7 3-Axis Gyroscope
+* Inertial Measurement Unit (IMU) Sensor: 3-Axis Accelerometer & 3-Axis Gyroscope
 * Environment Sensor: Temperature & Humidity
 * Altitude Sensor: Atmospheric Pressure
 * ESP32 Ready for AI
 * RGB LED
-* On-Board Battery Charger & Level Sensor
+* On-Board Battery Charger & Voltage Level Sensor
 
 ## Technical Spesification
 
 | Features                         | V2            | V3           | 
 | -------------------------------- | ------------- |--------------|
-| Microcontroller                  | ESP32         | ESP32        |
-| LoRa(WAN) Chip                   | RFM95W        | RFM95W       |
-| LoRa(WAN) Base Freq              | 915 MHz       | 915 MHz      |
-| LoRa(WAN) Freq Range             | 902-928 MHz   | 902-928 MHz  |
-| Antenna Impedance                | 50 Ohm        | 50 Ohm       |
-| IMU Sensor                       | MPU6050       | LSM6DS3TRC   |
-| Environment & Altitude Sensor    | BME280        | BME280       |
-| RGB LED                          | WS2812B       | WS2812B      |   
+| **Microcontroller**                  | ESP32         | ESP32        |
+| **LoRa(WAN) Chip**                   | RFM95W        | RFM95W       |
+| **LoRa(WAN) Base Freq**              | 915 MHz       | 915 MHz      |
+| **LoRa(WAN) Freq Range**             | 902-928 MHz   | 902-928 MHz  |
+| **Antenna Impedance**                | 50 Ohm        | 50 Ohm       |
+| **IMU Sensor**                       | ❗MPU6050❗       | ❗LSM6DS3TRC❗   |
+| **Environment & Altitude Sensor**    | BME280        | BME280       |
+| **RGB LED**                          | WS2812B       | WS2812B      |   
 
 ## Documentation
 
