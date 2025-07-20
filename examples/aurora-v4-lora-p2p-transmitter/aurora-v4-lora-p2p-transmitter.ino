@@ -17,7 +17,8 @@ int counter = 0;
 void setup() {
   // Initiate the LoRa Enable pin
   //pinMode(LORA_AURORA_V4_EN, OUTPUT);
-  // LoRa chip is Active Low
+  // LoRa chip is Active LOW
+  // Please set HIGH to TURN OFF
   //digitalWrite(LORA_AURORA_V4_EN, LOW);
 
   //initialize Serial Monitor
