@@ -7,18 +7,18 @@
 #include <LoRa.h>
 
 //define the pins used by the transceiver module
-#define LORA_AURORA_V3_NSS 13
-#define LORA_AURORA_V3_RST 25
-#define LORA_AURORA_V3_DIO0 27
-//#define LORA_AURORA_V3_EN 33
+#define LORA_AURORA_V4_NSS 13
+#define LORA_AURORA_V4_RST 25
+#define LORA_AURORA_V4_DIO0 27
+//#define LORA_AURORA_V4_EN 33
 
 int counter = 0;
 
 void setup() {
   // Initiate the LoRa Enable pin
-  //pinMode(LORA_AURORA_V3_EN, OUTPUT);
+  //pinMode(LORA_AURORA_V4_EN, OUTPUT);
   // LoRa chip is Active Low
-  //digitalWrite(LORA_AURORA_V3_EN, LOW);
+  //digitalWrite(LORA_AURORA_V4_EN, LOW);
 
   //initialize Serial Monitor
   Serial.begin(115200);
@@ -26,7 +26,7 @@ void setup() {
   Serial.println("LoRa Sender");
 
   //setup LoRa transceiver module
-  LoRa.setPins(LORA_AURORA_V3_NSS, LORA_AURORA_V3_RST, LORA_AURORA_V3_DIO0);
+  LoRa.setPins(LORA_AURORA_V4_NSS, LORA_AURORA_V4_RST, LORA_AURORA_V4_DIO0);
   
   //replace the LoRa.begin(---E-) argument with your location's frequency 
   //433E6 for Asia
