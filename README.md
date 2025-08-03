@@ -32,16 +32,17 @@
 
 ## Technical Spesification
 
-| Features                         | V2            | V3           | 
-| -------------------------------- | ------------- |--------------|
-| **Microcontroller**                  | ESP32         | ESP32        |
-| **LoRa(WAN) Chip**                   | RFM95W        | RFM95W       |
-| **LoRa(WAN) Base Freq**              | 915 MHz       | 915 MHz      |
-| **LoRa(WAN) Freq Range**             | 902-928 MHz   | 902-928 MHz  |
-| **Antenna Impedance**                | 50 Ohm        | 50 Ohm       |
-| **IMU Sensor**                       | ❗MPU6050❗       | ❗LSM6DS3TRC❗   |
-| **Environment & Altitude Sensor**    | BME280        | BME280       |
-| **RGB LED**                          | WS2812B       | WS2812B      |   
+| Features                             | V4            | V3                   | V2                   | 
+| ------------------------------------ | ------------- | -------------------- |----------------------|
+| **Microcontroller**                  | ESP32         | ESP32                | ESP32                |
+| **LoRa(WAN) Chip**                   | RFM95W        | RFM95W               | RFM95W               |
+| **LoRa(WAN) Base Freq**              | 915 MHz       | 915 MHz              | 915 MHz              |
+| **LoRa(WAN) Freq Range**             | 902-928 MHz   | 902-928 MHz          | 902-928 MHz          |
+| **Antenna Impedance**                | 50 Ohm        | 50 Ohm               | 50 Ohm               | 
+| **IMU Sensor**                       | ❗MPU6500❗  |❗LSM6DS3TRC❗       |❗MPU6050❗          | 
+| **Environment & Altitude Sensor**    | BME280        | BME280               | BME280               |
+| **RGB LED**                          | WS2812B       | WS2812B              | WS2812B              |
+| **Battery Level Sensor**             | ❗MAX17048❗ | ❗Voltage Divider❗ | ❗Voltage Divider❗ | 
 
 ## Documentation
 
